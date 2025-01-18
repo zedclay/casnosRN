@@ -23,6 +23,11 @@ class DonneeAssurePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            CustomDropdown(
+              label: 'Ayant droit',
+              items: ['00: Conjoint', '01: Enfant 1', '02: Enfant 2'],
+            ),
+            SizedBox(height: 16),
             CustomTextField(label: 'Nom'),
             SizedBox(height: 16),
             CustomTextField(label: 'Prenom'),

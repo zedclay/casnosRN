@@ -1,3 +1,4 @@
+import 'package:casnos/midecalForm.dart';
 import 'package:flutter/material.dart';
 
 class Antecedent extends StatelessWidget {
@@ -36,9 +37,16 @@ class Antecedent extends StatelessWidget {
             SizedBox(height: 32),
             Center(
               child: ElevatedButton(
+                // Handle navigation or any actions MedicalForm
                 onPressed: () {
-                  // Handle navigation or any actions
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => MedicalForm(),
+                    ),
+                  );
                 },
+
                 child: Text(
                   'Suivant',
                   style: TextStyle(
